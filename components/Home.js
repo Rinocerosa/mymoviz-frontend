@@ -11,15 +11,6 @@ function Home() {
   const [likedMovies, setLikedMovies] = useState([]);
   const [movieApi, setMovieApi] = useState([]);
 
-  // "overview": "Po  Warrior.",
-  // "popularity": 1665.369,
-  // "poster_path": "/kDp1vUBnMpe8ak4rjgl3cLELqjU.jpg",
-  // "release_date": "2024-03-02",
-  // "title": "Kung Fu Panda 4",
-  // "video": false,
-  // "vote_average": 7.155,
-  // "vote_count": 1231
-
   useEffect(() => {
     fetch("https://mymoviz-backend-snowy-rho.vercel.app/movies")
       .then((response) => response.json())
